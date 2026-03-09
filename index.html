@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zone Expansion</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="screen-title" class="screen">
+      <h1>ZONE EXPANSION</h1>
+      <p>BEST SCORE: <span id="title-best-score">0</span></p>
+      <button id="start-btn">TAP TO START</button>
+    </div>
+
+    <div id="screen-game" class="screen">
+      <div style="position: relative; display: inline-block">
+        <canvas id="game-canvas" width="400" height="600"></canvas>
+
+        <div id="result-layer">
+          <h2 id="finish-text">FINISH!</h2>
+          <p id="result-score-text">RESULT: <span id="result-score">0</span></p>
+          <button id="retry-btn" onclick="location.reload()">RETRY</button>
+        </div>
+      </div>
+
+      <div id="ui-area">
+        SCORE: <span id="score-val">0</span> | 
+        BEST SCORE: <span id="game-best-score">0</span>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

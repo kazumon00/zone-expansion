@@ -1,0 +1,83 @@
+/* 全体の背景設定 */
+body {
+  background-color: #050505;
+  color: #00FF00;
+  font-family: 'Share Tech Mono', monospace;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* 画面レイアウト */
+.screen {
+  display: none;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#screen-title {
+  display: block;
+  text-shadow: 0 0 10px #00FF00;
+}
+
+/* ハイスコア */
+#title-best-score, #game-best-score {
+  color: #FFFF00;
+  font-weight: bold;
+}
+
+canvas {
+  background-color: #000;
+  border: 1px solid #00FF00;
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+  cursor: crosshair;
+}
+
+/* リザルト画面 */
+#result-layer {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 20, 0, 0.85);
+  backdrop-filter: blur(5px);
+  color: #00FF00;
+  padding: 30px;
+  border: 1px solid #00FF00;
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.4), inset 0 0 10px rgba(0, 255, 0, 0.2);
+  font-family: monospace;
+  width: 260px;
+  z-index: 10;
+  text-align: center;
+}
+
+/* ハイスコア時の強調 */
+#finish-text {
+  margin-top: 0;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+#ui-area {
+  color: #00FF00;
+  margin-top: 15px;
+  font-family: monospace;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #00FF00;
+  color: #00FF00;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-family: inherit;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #00FF00;
+  color: #000;
+}
